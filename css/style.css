@@ -1,0 +1,432 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Inter&family=Open+Sans:wght@300..800&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap');
+
+/* font-family: "Open Sans",sans-serif;
+font-family: "Poppins", sans-serif; 
+font-family: "Inter", sans-serif;
+font-family: "Comfortaa", sans-serif;*/
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container {
+    position: relative;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.header-top {
+    padding: 10px 0;
+    background-color: rgb(247, 246, 255);
+}
+
+.header-top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top-btn {
+    display: flex;
+    gap: 15px;
+}
+
+.header-top-link {
+    padding: 14px 30px;
+    border: 1px solid rgb(82, 26, 153);
+    border-radius: 10px;
+    color: rgb(82, 26, 153);
+    font-weight: 600;
+    line-height: 1;
+}
+
+.header-top-phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top-tel {
+    color: rgb(21, 21, 21);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.header-menu {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(21, 21, 21);
+    font-weight: 600;
+    line-height: 1;
+}
+
+.header-menu-item>a {
+    color: rgb(21, 21, 21);
+    font-weight: 600;
+    line-height: 1;
+}
+
+
+/* _______blockOne_______  */
+
+.blockOne {
+    padding: 147px 0 33px;
+    background-image: url(/img/Section_1/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.blockOne-title {
+    max-width: 768px;
+    margin-bottom: 38px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 0.95;
+    color: rgb(70, 16, 138)
+}
+
+.blockOne-title>span {
+    color: rgb(255, 255, 255);
+}
+
+.blockOne-text {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: rgb(255, 255, 255)
+}
+
+.blockOne-text::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/img/Section_1/icon-purpul.svg);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.blockOne-btn {
+    display: block;
+    margin-bottom: 45px;
+    max-width: 360px;
+    padding: 15px 30px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background: rgb(97, 0, 220);
+}
+
+.blockOne-advantages {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blockOne-advantages::before {
+    content: "";
+    display: block;
+    width: 352px;
+    height: 550px;
+    position: absolute;
+    top: -425px;
+    left: 780px;
+    background-image: url(/img/Section_1/pupil.png);
+}
+
+.blockOne-advantage-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 360px;
+    padding: 28px 25px 28px 50px;
+    border-radius: 20px;
+    background-color: rgb(150, 224, 241);
+}
+
+.blockOne-advantage-card::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-image: url(/img/Section_1/icon_white.svg);
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.blockOne-advantage-text {
+    font-weight: 500;
+    line-height: 1.3;
+    color: rgb(21, 21, 21);
+}
+
+.blockOne-advantage-text>span {
+    font-weight: 700;
+}
+
+
+/* ______BlockTwo______ */
+
+.blockTwo {
+    padding: 87px 0 120px;
+}
+
+.blockTwo-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blockTwo-card {
+    padding: 32px 20px 44px;
+    max-width: 280px;
+    border-radius: 40px;
+    background: rgb(255, 228, 131);
+    text-align: center;
+    color: rgb(21, 21, 21);
+}
+
+.blockTwo-card:nth-child(even) {
+    background: rgb(217, 208, 255);
+}
+
+.blockTwo-card__title {
+    margin: 23px 0 20px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.blockTwo-card__text {
+    color: rgb(21, 21, 21);
+    line-height: 1.3;
+}
+
+.blockTwo-card__text>span {
+    font-weight: 600;
+}
+
+
+/* _______BlockTree________ */
+
+.blockThree {
+    padding: 0 0 75px;
+}
+
+.blockTree-title {
+    margin-bottom: 50px;
+    color: rgb(21, 21, 21);
+    font-family: Comfortaa;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1%;
+}
+
+.blockThree-cardsWrapper {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.blockThree-cardsWrapper_card {
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background: rgb(255, 243, 214);
+    z-index: 10;
+}
+
+.blockThree-cardsWrapper_card:nth-child(even) {
+    background: rgb(255, 228, 131);
+}
+
+.blockThree-cardsWrapper_card:last-child {
+    padding-left: 40px;
+    background: transparent;
+    position: relative;
+}
+
+.blockThree-cardsWrapper_card:last-child::after {
+    content: "";
+    width: 397px;
+    height: 315px;
+    background-image: url(/img/Section_3/card_dec.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -42px;
+    left: -9px;
+    z-index: -1;
+}
+
+.blockThree-cardsWrapper_card:nth-child(even)>.card-mainLetter {
+    color: rgb(255, 243, 214);
+}
+
+.card-mainLetter {
+    color: rgb(255, 255, 255);
+    font-family: Comfortaa;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.card-text {
+    color: rgb(21, 21, 21);
+    line-height: 1.3;
+}
+
+.card-text>span {
+    font-weight: 600;
+}
+
+
+/* _______BlockFour_______ */
+
+.blockFour {
+    padding: 94px 0 155px;
+}
+
+.blockFour-wrapper_deco {
+    position: relative;
+}
+
+.blockFour-wrapper_deco::after {
+    content: "";
+    width: 117px;
+    height: 121px;
+    background-image: url(/img/Section_4/magic.svg);
+    position: absolute;
+    top: 12px;
+    right: 80px;
+}
+
+.blockFour-wrapper {
+    position: relative;
+    padding: 80px 115px 105px 560px;
+    border-radius: 40px;
+    background: rgb(2, 141, 250);
+}
+
+.blockFour-wrapper::before {
+    content: "";
+    width: 891px;
+    height: 658px;
+    background-image: url(/img/Section_4/background-deco.png);
+    position: absolute;
+    top: -50px;
+    left: 255px;
+}
+
+.blockFour-wrapper::after {
+    content: "";
+    width: 335px;
+    height: 616px;
+    background-image: url(/img/Section_4/boy.png);
+    position: absolute;
+    top: -75px;
+    left: 143px;
+}
+
+.blockFour-title {
+    position: relative;
+    margin-bottom: 50px;
+    color: rgb(21, 21, 21);
+    font-family: "Comfortaa", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 95%;
+    letter-spacing: 1px;
+}
+
+.blockFour-quote,
+.blockFour-author {
+    position: relative;
+    color: rgb(21, 21, 21);
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.blockFour-quote::before {
+    content: "";
+    width: 55px;
+    height: 48px;
+    background-image: url(/img/Section_4/quotes_up.png);
+    position: absolute;
+    top: -30px;
+    left: -55px;
+}
+
+.blockFour-author {
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.blockFour-author::after {
+    content: "";
+    width: 55px;
+    height: 48px;
+    background-image: url(/img/Section_4/quotes_down.png);
+    position: absolute;
+    bottom: -30px;
+    right: 10px;
+}
+
+.blockFour-buttons {
+    margin-top: -35px;
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.blockFour-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-width: 360px;
+    min-height: 70px;
+    padding: 0 30px;
+    border-radius: 20px;
+    background: rgb(97, 0, 220);
+}
+
+.blockFour-btn>a {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    line-height: 1;
+}
+
+.blockFour-btn:first-child {
+    position: relative;
+    padding-left: 67px;
+}
+
+.blockFour-btn:first-child::before {
+    content: "";
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    /* background-color: rgb(255, 205, 41); */
+    background: rgb(255, 205, 41) url(/img/Section_4/Play.svg) no-repeat top 50% left 57%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -44px;
+}
