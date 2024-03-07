@@ -300,7 +300,7 @@ body {
 /* _______BlockFour_______ */
 
 .blockFour {
-    padding: 94px 0 155px;
+    padding: 94px 0 120px;
 }
 
 .blockFour-wrapper_deco {
@@ -429,4 +429,125 @@ body {
     top: 50%;
     transform: translateY(-50%);
     left: -44px;
+}
+
+
+/* _______BlockFive_______ */
+
+.blockFive {
+    padding-bottom: 110px;
+}
+
+.blockFive-wrapper {}
+
+.blockFive-title {
+    margin-bottom: 100px;
+    max-width: 523px;
+    color: rgb(21, 21, 21);
+    font-family: "Comfortaa", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: 1px;
+}
+
+.blockFive-cards-wrapper {
+    position: relative;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 402px;
+}
+
+.blockFive-cards-wrapper::before {
+    content: "";
+    width: 566px;
+    height: 566px;
+    background-image: url(/img/Section_5/decor.png);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.blockFive-cards-wrapper::after {
+    content: "";
+    width: 363px;
+    height: 525px;
+    background-image: url(/img/Section_5/girl.png);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.blockFive-card {
+    position: relative;
+    padding: 90px 75px 35px 40px;
+    width: 380px;
+    background-color: rgb(255, 243, 214);
+    border-radius: 30px;
+}
+
+.blockFive-card:nth-child(even) {
+    padding-left: 92px;
+    padding-right: 20px;
+}
+
+.blockFive-card::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url(/img/Section_5/icon.svg);
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.blockFive-card:nth-child(even)::before {
+    left: 92px;
+}
+
+.blockFive-card__text {
+    color: rgb(21, 21, 21);
+    font-size: 21px;
+    line-height: 1.2;
+}
+
+.blockFive-card__text>span {
+    font-weight: 700;
+}
+
+.blockFive-buttons {}
+
+.blockFive-btn {
+    margin: 0 auto;
+    padding: 25px 68px;
+    width: 367px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    background: rgb(97, 0, 220);
+}
+
+.blockFive-btn>a {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    line-height: 1;
+}
+
+.blockFive-btn:first-child::before {
+    content: "";
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    background: rgb(255, 205, 41) url(/img/Section_4/Play.svg) no-repeat top 50% left 57%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -44px;
 }
