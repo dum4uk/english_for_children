@@ -752,8 +752,6 @@ body {
     background-color: rgb(150, 224, 241);
 }
 
-.blockEight-card_content {}
-
 .blockEight-card_title {
     margin-bottom: 20px;
     font-size: 24px;
@@ -763,4 +761,150 @@ body {
 
 .blockEight-card_text {
     line-height: 1.4;
+}
+
+
+/* _______BlockNine_______ */
+
+.blockNine {
+    padding-bottom: 120px;
+}
+
+.deco-letter {
+    position: relative;
+}
+
+.deco-letter::before,
+.deco-letter::after {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 1;
+    width: 90px;
+    height: 120px;
+    z-index: 1;
+}
+
+.deco-letter::before {
+    content: "A";
+    top: 0px;
+    left: 105px;
+    transform: rotate(-21.64deg);
+}
+
+.deco-letter::after {
+    content: "B";
+    top: 110px;
+    left: 50px;
+    transform: rotate(9.33deg);
+}
+
+.deco-heart {
+    position: relative;
+}
+
+.deco-heart::before,
+.deco-heart::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+}
+
+.deco-heart::before {
+    width: 128px;
+    height: 121px;
+    background-image: url(/img/Section_9/blueheart1.png);
+    top: 48px;
+    right: 81px;
+}
+
+.deco-heart::after {
+    width: 74px;
+    height: 70px;
+    background-image: url(/img/Section_9/redheart.png);
+    top: 138px;
+    right: 200px;
+}
+
+.deco-letter-heart {
+    position: relative;
+}
+
+.deco-letter-heart::before,
+.deco-letter-heart::after {
+    position: absolute;
+    z-index: 1;
+}
+
+.deco-letter-heart::before {
+    content: "C";
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 1;
+    width: 90px;
+    height: 120px;
+    bottom: 0px;
+    left: 134px;
+    transform: rotate(29.18deg);
+}
+
+.deco-letter-heart::after {
+    content: "";
+    width: 78px;
+    height: 77px;
+    background-image: url(/img/Section_9/purpulheart.png);
+    bottom: 12px;
+    right: 122px;
+}
+
+.blockNine-wrapper {
+    position: relative;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+    background-color: rgb(2, 141, 250);
+}
+
+.blockNine-wrapper::before {
+    content: "";
+    width: 779px;
+    height: 529px;
+    background-image: url(/img/Section_9/decor.png);
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blockNine-title {
+    position: relative;
+    margin-bottom: 20px;
+    font-family: "Comfortaa";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: 1px;
+}
+
+.blockNine-text {
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.blockNine-btn {
+    position: relative;
+    display: block;
+    padding: 26px 112px;
+    border-radius: 20px;
+    background-color: rgb(97, 0, 220);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    line-height: 1;
 }
